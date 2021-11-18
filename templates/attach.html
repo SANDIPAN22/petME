@@ -1,0 +1,18 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<div class="hero-image">
+    <div class="hero-text">
+<form  method="post">
+
+
+
+    {{ form.hidden_tag() }}
+    {{ form.name.label }}{{ form.name }} <br>
+    {{ form.pid.label }}{{ form.pid }}
+    {{ form.submit()}}
+
+</form>
+    </div></div>
+{% endblock content %}

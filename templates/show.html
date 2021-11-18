@@ -1,0 +1,48 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+<div class="row">
+    {% for p in pp %}
+    <div class="col-lg-3 mb-3" >
+        </div>
+    <div class="col-lg-3 mb-3" >
+    <div class="card text-center" style="width: 15rem; padding: 5px;color: brown;border-radius: 10px; box-shadow: 0px 5px 5px black; border-left: 10px;">
+        <img class="card-img-top" src="data:image/jpeg;base64,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" 
+                alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title">{{ p.name | upper  }}</h4>
+            <p class="card-text">
+                {% if not  (p.owner) %}
+                <p class="card-text"> YOU can Addopt this cute puppy !</p>
+                {%else %}
+                <p class="card-text">This puppy is adopted by {{ p.owner.name }}<p></p>
+                {% endif %}
+            </p>
+            
+                AGE: {{ p.age }}
+                ID: {{p.id}}
+           
+        </div>
+    </div>
+    </div>
+
+   
+    <!-- <div class="card w-50" style="color:rgb(24, 85, 85)">
+        <div class="card-header">
+          ID: {{p.id}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"> </h5>
+          
+          
+          <a href="#" class="btn btn-primary">See Pictures</a>
+        </div>
+        <div class="card-footer text-muted">
+         
+        </div>
+      </div> -->
+   
+    {% endfor %}
+</div>
+
+{% endblock content %}
